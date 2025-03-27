@@ -19,7 +19,7 @@ We introduce a geometric deep learning framework based on **rotationally equivar
 
 ### 🧪 Method Overview
 
-<img src="figures/Fig3.pdf" alt="sCNN Architecture and Pipeline" width="100%"/>
+<img src="figures/Fig3.png" alt="sCNN Architecture and Pipeline" width="100%"/>
 
 *Figure 3: Overview of the full data processing pipeline and sCNN architecture.*
 
