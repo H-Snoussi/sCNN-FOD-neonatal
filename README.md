@@ -1,4 +1,4 @@
-# Equivariant Spherical CNNs for Neonatal Diffusion MRI
+## Equivariant Spherical CNNs for Neonatal Diffusion MRI
 
 This repository provides the official implementation of our paper:
 
@@ -7,25 +7,43 @@ This repository provides the official implementation of our paper:
 > Department of Radiology, Boston Children’s Hospital & Harvard Medical School
 
 
-## Summary
+### Summary
 
-We introduce a geometric deep learning framework based on **rotationally equivariant Spherical CNNs (sCNNs)** to estimate **Fiber Orientation Distributions (FODs)** from neonatal diffusion MRI (dMRI) with **only 30% of the full acquisition protocol**. The model was trained and evaluated on 43 neonatal dMRI datasets from the Developing Human Connectome Project (dHCP).
+We introduce a geometric deep learning framework based on **rotationally equivariant Spherical CNNs (sCNNs)** to estimate **Fiber Orientation Distributions (FODs)** from neonatal diffusion MRI (dMRI), using **only 30% of the full diffusion acquisition protocol**. This approach enables faster and more practical neonatal imaging. The model was trained and evaluated on 43 neonatal dMRI datasets from the Developing Human Connectome Project (dHCP).
 
 ### Highlights
-- **SO(3)-equivariant** spherical convolutions that respect rotational symmetries of diffusion signals.
-- **Shell-attention mechanism** to dynamically weight contributions from different b-value shells.
-- **Spatial-domain loss function** for perceptually meaningful FOD reconstructions.
-- Achieves **superior FOD estimation** and tractography compared to standard MLP and MSMT-CSD.
-
-### 🧪 Method Overview
-
-<img src="figures/Fig3.png" alt="sCNN Architecture and Pipeline" width="100%"/>
-
-*Figure 3: Overview of the full data processing pipeline and sCNN architecture.*
+- Uses **only 30%** of the dHCP acquisition protocol — reducing scan time and motion artifacts.
+- Employs **SO(3)-equivariant spherical convolutions** to preserve rotational symmetries of diffusion signals.
+- Incorporates a **shell-attention mechanism** for adaptive fusion across b-value shells.
+- Optimized with a **spatial-domain loss function** to prioritize perceptually meaningful FOD reconstructions.
+- Delivers **superior tractography** compared to both standard MLP and MSMT-CSD methods.
 
 
+### Method Overview
 
-## 📄 Citation
+<img src="figures/Fig3.pdf" alt="sCNN Architecture and Pipeline" width="100%"/>
+
+*Figure: Overview of the full data processing pipeline and sCNN architecture.*
+
+---
+
+### FOD Estimation Accuracy
+
+<img src="figures/Fig4.png" alt="FOD Prediction Comparison" width="100%"/>
+
+*Figure: Comparison of FODs predicted by MLP, sCNN (30% data), and MSMT-CSD ground truth.*
+
+---
+
+### Tractography Analysis
+
+<img src="figures/Fig6.pdf" alt="Tractography Results" width="100%"/>
+
+*Figure: Tractography results using FODs from MLP, sCNN, and MSMT-CSD.*
+
+---
+
+### 📄 Citation
 
 If you use this work, please cite:
 
