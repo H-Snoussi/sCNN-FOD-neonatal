@@ -21,7 +21,7 @@ We introduce a geometric deep learning framework based on **rotationally equivar
 
 ### Method Overview
 
-<img src="figures/Fig3.pdf" alt="sCNN Architecture and Pipeline" width="100%"/>
+<img src="figures/Fig3.png" alt="sCNN Architecture and Pipeline" width="100%"/>
 
 *Figure: Overview of the full data processing pipeline and sCNN architecture.*
 
@@ -37,7 +37,7 @@ We introduce a geometric deep learning framework based on **rotationally equivar
 
 ### Tractography Analysis
 
-<img src="figures/Fig6.pdf" alt="Tractography Results" width="100%"/>
+<img src="figures/Fig6.png" alt="Tractography Results" width="100%"/>
 
 *Figure: Tractography results using FODs from MLP, sCNN, and MSMT-CSD.*
 
