@@ -2,10 +2,9 @@
 
 This repository provides the official implementation of our paper:
 
-> **Equivariant Spherical CNNs for Accurate Fiber Orientation Distribution Estimation in Neonatal Diffusion MRI with Reduced Acquisition Time**  
+> **[Equivariant Spherical CNNs for Accurate Fiber Orientation Distribution Estimation in Neonatal Diffusion MRI with Reduced Acquisition Time](https://arxiv.org/abs/2504.01925)**  
 > *Haykel Snoussi and Davood Karimi*  
-> Department of Radiology, Boston Children’s Hospital & Harvard Medical School  
-> [arXiv:2504.01925](https://arxiv.org/abs/2504.01925)
+> Department of Radiology, Boston Children’s Hospital & Harvard Medical School
 
 
 ### Summary
