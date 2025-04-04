@@ -48,9 +48,9 @@ We introduce a geometric deep learning framework based on **rotationally equivar
 If you use this work, please cite:
 
 ```bibtex
-@article{snoussi2025scnn,
+@article{snoussi2025equivariant,
   title={Equivariant Spherical CNNs for Accurate Fiber Orientation Distribution Estimation in Neonatal Diffusion MRI with Reduced Acquisition Time},
   author={Snoussi, Haykel and Karimi, Davood},
-  journal={arXiv preprint arXiv:},
+  journal={arXiv preprint arXiv:2504.01925},
   year={2025}
 }
