@@ -42,6 +42,18 @@ for SUBJECT in ${MAINDHCPDIR}/*; do
         dwi2response dhollander -fslgrad ${BVEC} ${BVAL} ${OUTPUTDIR}/dwi_norm.nii.gz \
             ${OUTPUTDIR}/wm_response.txt ${OUTPUTDIR}/gm_response.txt ${OUTPUTDIR}/csf_response.txt
 
+        FODTYPE="REVISION"
+        if [ "$FODTYPE" == "FIRST_SUBMISSION" ]; then
+            dwi2response dhollander -fslgrad ${BVEC} ${BVAL} ${OUTPUTDIR}/dwi_norm.nii.gz \
+                ${OUTPUTDIR}/wm_response.txt ${OUTPUTDIR}/gm_response.txt ${OUTPUTDIR}/csf_response.txt 
+
+        elif [ "$FODTYPE" == "REVISION" ]; then
+            dwi2response dhollander -fslgrad ${BVEC} ${BVAL} ${OUTPUTDIR}/dwi_norm.nii.gz \
+                ${OUTPUTDIR}/wm_response.txt ${OUTPUTDIR}/gm_response.txt ${OUTPUTDIR}/csf_response.txt -wm_algo tournier -fa 0.5 -force
+
+        fi
+
+
         dwi2fod msmt_csd ${OUTPUTDIR}/dwi_norm.nii.gz -fslgrad ${BVEC} ${BVAL} -mask ${MASK} \
             ${OUTPUTDIR}/wm_response.txt ${OUTPUTDIR}/wmfod.nii.gz \
             ${OUTPUTDIR}/gm_response.txt ${OUTPUTDIR}/gm.nii.gz \
